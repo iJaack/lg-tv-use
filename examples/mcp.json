@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "lg-tv-use": {
+      "command": "/absolute/path/to/lg-tv-use/.venv/bin/lg-tv-use-mcp",
+      "args": [],
+      "env": {
+        "TV_HOST": "192.168.1.100"
+      }
+    }
+  }
+}

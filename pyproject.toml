@@ -1,0 +1,35 @@
+[project]
+name = "lg-tv-use"
+version = "0.3.1"
+description = "Local MCP and CLI for LG webOS TVs with reusable app routes and visual fallback"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Jaack"}]
+keywords = ["mcp", "webos", "lg", "tv", "automation"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Home Automation",
+]
+dependencies = ["mcp==1.30.0", "websocket-client==1.9.2"]
+
+[project.urls]
+Homepage = "https://github.com/iJaack/lg-tv-use"
+Repository = "https://github.com/iJaack/lg-tv-use"
+Issues = "https://github.com/iJaack/lg-tv-use/issues"
+Changelog = "https://github.com/iJaack/lg-tv-use/blob/main/CHANGELOG.md"
+
+[project.scripts]
+lg-tv-use = "tv_use:main"
+lg-tv-use-mcp = "server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["tv_use", "server", "tv_runtime", "app_learning", "tv_cli", "tv_power"]
