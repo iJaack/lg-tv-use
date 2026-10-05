@@ -1,5 +1,7 @@
 # LG TV Use
 
+![LG TV Use — Computer use for your TV](assets/branding/cover.png)
+
 [![CI](https://github.com/iJaack/lg-tv-use/actions/workflows/ci.yml/badge.svg)](https://github.com/iJaack/lg-tv-use/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -196,3 +198,6 @@ The webOS second-screen protocol was studied through
 [LG Connect SDK](https://github.com/ConnectSDK/Connect-SDK-Android-Core).
 Downloaded SDK sources and private device evidence are not included in this repository.
 Runtime dependencies retain their own licenses.
+
+Brand assets: [transparent logo](assets/branding/logo.png),
+[cover](assets/branding/cover.png), and [generation prompts](assets/branding/README.md).
