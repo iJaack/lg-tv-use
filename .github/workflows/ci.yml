@@ -35,6 +35,9 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python -m compileall -q tv_use.py tv_runtime.py tv_power.py app_learning.py tv_cli.py server.py tests
       - name: Installed CLI outside source tree
+        env:
+          TV_HOST: 192.168.1.100
+          TV_STATE_DIR: ${{ runner.temp }}/lg-tv-use-smoke
         run: |
           cd "$RUNNER_TEMP"
           lg-tv-use --help
